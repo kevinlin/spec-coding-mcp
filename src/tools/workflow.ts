@@ -12,11 +12,11 @@ export async function workflowStart(): Promise<string> {
     session_id
   });
   
-  return `# 🚀 VibeSpecs Development Workflow Started
+  return `# 🚀 Spec-driven Development Workflow Started
 
 ## Current Stage: Goal Collection (1/5)
 
-Welcome to the VibeSpecs development workflow! I'll help you complete the entire development process from requirements to code.
+Welcome to the Spec-driven development workflow! I'll help you complete the entire development process from requirements to code.
 
 ### Workflow Overview:
 - [ ] 1. **Goal Collection** ← Current Stage
