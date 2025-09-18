@@ -1,11 +1,11 @@
 {
-  "name": "spec-driven-dev-mcp",
-  "version": "1.0.2",
+  "name": "spec-coding-mcp",
+  "version": "1.0.0",
   "description": "MCP server for AI-powered IDE to follow spec-driven development",
   "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "spec-driven-dev-mcp": "dist/index.js"
+    "spec-coding-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -27,11 +27,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinlin/spec-driven-dev-mcp.git"
+    "url": "git+https://github.com/kevinlin/spec-coding-mcp.git"
   },
-  "homepage": "https://github.com/kevinlin/spec-driven-dev-mcp#readme",
+  "homepage": "https://github.com/kevinlin/spec-coding-mcp#readme",
   "bugs": {
-    "url": "https://github.com/kevinlin/spec-driven-dev-mcp/issues"
+    "url": "https://github.com/kevinlin/spec-coding-mcp/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.0",

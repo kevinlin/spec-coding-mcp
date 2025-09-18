@@ -33,11 +33,11 @@ This is an MCP (Model Context Protocol) server that implements a spec-driven dev
 
 The spec-driven development workflow consists of 5 sequential stages, each with specific tools:
 
-1. **Goal Confirmation**: `spec_driven_dev_workflow_start` → `spec_driven_dev_goal_confirmed`
-2. **Requirements Gathering**: `spec_driven_dev_requirements_start` → `spec_driven_dev_requirements_confirmed`
-3. **Design Documentation**: `spec_driven_dev_design_start` → `spec_driven_dev_design_confirmed`
-4. **Task Planning**: `spec_driven_dev_tasks_start` → `spec_driven_dev_tasks_confirmed`
-5. **Task Execution**: `spec_driven_dev_execute_start`
+1. **Goal Confirmation**: `spec_coding_workflow_start` → `spec_coding_goal_confirmed`
+2. **Requirements Gathering**: `spec_coding_requirements_start` → `spec_coding_requirements_confirmed`
+3. **Design Documentation**: `spec_coding_design_start` → `spec_coding_design_confirmed`
+4. **Task Planning**: `spec_coding_tasks_start` → `spec_coding_tasks_confirmed`
+5. **Task Execution**: `spec_coding_execute_start`
 
 Each stage generates documentation in `docs/specs/{feature_name}/` directory:
 - `requirements.md` (EARS format)

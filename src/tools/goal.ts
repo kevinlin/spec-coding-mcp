@@ -26,7 +26,7 @@ export async function goalConfirmed(params: GoalConfirmedParams): Promise<string
 - [ ] 4. Task Planning
 - [ ] 5. Task Execution
 
-Now please call \`spec_driven_dev_requirements_start\` to begin detailed requirements gathering.
+Now please call \`spec_coding_requirements_start\` to begin detailed requirements gathering.
 
 **Session Information**:
 - Session ID: \`${session_id}\`

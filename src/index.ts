@@ -3,13 +3,13 @@ import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import { createServer } from './server.js';
 
 async function main() {
-  console.error('[MCP] Starting spec-driven-dev-mcp server...');
+  console.error('[MCP] Starting spec-coding-mcp server...');
   
   const server = createServer();
   const transport = new StdioServerTransport();
   
   await server.connect(transport);
-  console.error('[MCP] spec-driven-dev-mcp server started successfully');
+  console.error('[MCP] spec-coding-mcp server started successfully');
 }
 
 main().catch((error) => {

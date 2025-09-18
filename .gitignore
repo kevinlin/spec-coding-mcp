@@ -205,6 +205,12 @@ $RECYCLE.BIN/
 # History files (often created by various tools)
 .history/
 
+# Claude files
+.claude/
+
+# Smithery files
+.smithery/
+
 # Logs
 logs
 *.log

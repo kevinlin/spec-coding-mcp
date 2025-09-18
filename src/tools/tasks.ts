@@ -36,7 +36,7 @@ ${template}
 
 **Important**:
 - Please create task list according to the above guidelines
-- **Only when you explicitly confirm the task planning is complete can you call** \`spec_driven_dev_tasks_confirmed\` tool
+- **Only when you explicitly confirm the task planning is complete can you call** \`spec_coding_tasks_confirmed\` tool
 - **Never** call the next stage tool before the user **explicitly confirms the tasks**
 
 **Session Information**:

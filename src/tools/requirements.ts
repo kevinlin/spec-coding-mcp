@@ -36,7 +36,7 @@ ${template}
 
 **Important**:
 - Please generate requirements document according to the above guidelines
-- **Only when you explicitly confirm the requirements are complete can you call** \`spec_driven_dev_requirements_confirmed\` tool
+- **Only when you explicitly confirm the requirements are complete can you call** \`spec_coding_requirements_confirmed\` tool
 - **Never** call the next stage tool before the user **explicitly confirms the requirements**
 
 **Session Information**:

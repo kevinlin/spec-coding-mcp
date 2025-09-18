@@ -36,7 +36,7 @@ ${template}
 
 **Important**:
 - Please create design document according to the above guidelines
-- **Only when you explicitly confirm the design is complete can you call** \`spec_driven_dev_design_confirmed\` tool
+- **Only when you explicitly confirm the design is complete can you call** \`spec_coding_design_confirmed\` tool
 - **Never** call the next stage tool before the user **explicitly confirms the design**
 
 **Session Information**:

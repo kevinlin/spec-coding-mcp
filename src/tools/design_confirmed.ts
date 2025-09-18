@@ -27,7 +27,7 @@ The design document contains the complete technical architecture, component desi
 - [ ] 4. **Task Planning** ← Next Stage
 - [ ] 5. Task Execution
 
-Now please call \`spec_driven_dev_tasks_start\` to begin the task planning stage.
+Now please call \`spec_coding_tasks_start\` to begin the task planning stage.
 
 **Session Information**:
 - Session ID: \`${session_id}\`

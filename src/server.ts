@@ -16,7 +16,7 @@ import { executeStart } from './tools/execute.js';
 export function createServer() {
   const server = new Server(
     { 
-      name: 'spec-driven-dev-mcp',
+      name: 'spec-coding-mcp',
       version: '1.0.0'
     },
     { 
@@ -27,7 +27,7 @@ export function createServer() {
   // Tool definitions
   const tools = [
     {
-      name: 'spec_driven_dev_workflow_start',
+      name: 'spec_coding_workflow_start',
       description: 'Start the specs workflow and begin the goal collection phase',
       inputSchema: {
         type: 'object',
@@ -36,7 +36,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_goal_confirmed',
+      name: 'spec_coding_goal_confirmed',
       description: 'Confirm the completion of the feature goal, set the feature_name, and proceed to the requirements collection phase',
       inputSchema: {
         type: 'object',
@@ -58,7 +58,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_requirements_start',
+      name: 'spec_coding_requirements_start',
       description: 'Start the requirements collection phase and provide guidance for requirements gathering',
       inputSchema: {
         type: 'object',
@@ -76,7 +76,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_requirements_confirmed',
+      name: 'spec_coding_requirements_confirmed',
       description: 'Confirm the completion of requirements collection and proceed to the design phase',
       inputSchema: {
         type: 'object',
@@ -94,7 +94,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_design_start',
+      name: 'spec_coding_design_start',
       description: 'Start the design documentation phase and provide guidance for creating design documents',
       inputSchema: {
         type: 'object',
@@ -112,7 +112,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_design_confirmed',
+      name: 'spec_coding_design_confirmed',
       description: 'Confirm the completion of the design document and proceed to the task planning phase',
       inputSchema: {
         type: 'object',
@@ -130,7 +130,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_tasks_start',
+      name: 'spec_coding_tasks_start',
       description: 'Start the task planning phase and provide guidance for creating the task list',
       inputSchema: {
         type: 'object',
@@ -148,7 +148,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_tasks_confirmed',
+      name: 'spec_coding_tasks_confirmed',
       description: 'Confirm the completion of task planning and proceed to the execution phase',
       inputSchema: {
         type: 'object',
@@ -166,7 +166,7 @@ export function createServer() {
       }
     },
     {
-      name: 'spec_driven_dev_execute_start',
+      name: 'spec_coding_execute_start',
       description: 'Start the task execution phase and provide guidance for task execution',
       inputSchema: {
         type: 'object',
@@ -204,39 +204,39 @@ export function createServer() {
       let result: any;
 
       switch (name) {
-        case 'spec_driven_dev_workflow_start':
+        case 'spec_coding_workflow_start':
           result = await workflowStart();
           break;
         
-        case 'spec_driven_dev_goal_confirmed':
+        case 'spec_coding_goal_confirmed':
           result = await goalConfirmed(args as any);
           break;
         
-        case 'spec_driven_dev_requirements_start':
+        case 'spec_coding_requirements_start':
           result = await requirementsStart(args as any);
           break;
         
-        case 'spec_driven_dev_requirements_confirmed':
+        case 'spec_coding_requirements_confirmed':
           result = await requirementsConfirmed(args as any);
           break;
         
-        case 'spec_driven_dev_design_start':
+        case 'spec_coding_design_start':
           result = await designStart(args as any);
           break;
         
-        case 'spec_driven_dev_design_confirmed':
+        case 'spec_coding_design_confirmed':
           result = await designConfirmed(args as any);
           break;
         
-        case 'spec_driven_dev_tasks_start':
+        case 'spec_coding_tasks_start':
           result = await tasksStart(args as any);
           break;
         
-        case 'spec_driven_dev_tasks_confirmed':
+        case 'spec_coding_tasks_confirmed':
           result = await tasksConfirmed(args as any);
           break;
         
-        case 'spec_driven_dev_execute_start':
+        case 'spec_coding_execute_start':
           result = await executeStart(args as any);
           break;
         

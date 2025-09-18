@@ -27,7 +27,7 @@ The requirements document contains complete user stories and EARS-format accepta
 - [ ] 4. Task Planning
 - [ ] 5. Task Execution
 
-Now please call \`spec_driven_dev_design_start\` to begin the technical design stage.
+Now please call \`spec_coding_design_start\` to begin the technical design stage.
 
 **Session Information**:
 - Session ID: \`${session_id}\`

@@ -27,7 +27,7 @@ The tasks document contains a detailed list of development tasks, each with clea
 - [x] 4. **Task Planning** ✅
 - [ ] 5. **Task Execution** ← Final Stage
 
-Now please call \`spec_driven_dev_execute_start\` to begin the task execution stage.
+Now please call \`spec_coding_execute_start\` to begin the task execution stage.
 
 **Session Information**:
 - Session ID: \`${session_id}\`

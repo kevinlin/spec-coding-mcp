@@ -1,6 +1,6 @@
 # Spec-driven Development MCP Server
 
-[![smithery badge](https://smithery.ai/badge/@kevinlin/spec-driven-dev-mcp)](https://smithery.ai/server/@kevinlin/spec-driven-dev-mcp)
+[![smithery badge](https://smithery.ai/badge/@kevinlin/spec-coding-mcp)](https://smithery.ai/server/@kevinlin/spec-coding-mcp)
 
 An MCP server that brings AI-guided spec-driven development workflow to any AI-powered IDEs beyonnd Kiro. Transform your development process with structured, step-by-step guidance from idea to implementation.
 
@@ -19,27 +19,27 @@ Spec-driven development is a methodology that emphasizes creating detailed speci
 
 ### Installing via Smithery
 
-To install spec-driven-dev-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kevinlin/spec-driven-dev-mcp):
+To install spec-coding-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kevinlin/spec-coding-mcp):
 
 ```bash
-npx -y @smithery/cli install @kevinlin/spec-driven-dev-mcp --client claude
+npx -y @smithery/cli install @kevinlin/spec-coding-mcp --client claude
 ```
 
 ### Using npx (Recommended)
 
 ```bash
 # Always get the latest version
-npx spec-driven-dev-mcp@latest
+npx spec-coding-mcp@latest
 
 # Or simply (will also get latest)
-npx spec-driven-dev-mcp
+npx spec-coding-mcp
 ```
 
 ### Using npm
 
 ```bash
-npm install -g spec-driven-dev-mcp
-spec-driven-dev-mcp
+npm install -g spec-coding-mcp
+spec-coding-mcp
 ```
 
 ## Usage
@@ -51,9 +51,9 @@ Add to your Cursor MCP settings:
 ```json
 {
   "mcpServers": {
-    "spec-driven-dev-mcp": {
+    "spec-coding-mcp": {
       "command": "npx",
-      "args": ["spec-driven-dev-mcp@latest"],
+      "args": ["spec-coding-mcp@latest"],
       "env": {},
       "disabled": false
     }
@@ -63,15 +63,15 @@ Add to your Cursor MCP settings:
 
 ### Available Tools
 
-1. **spec_driven_dev_workflow_start** - Start the development workflow
-2. **spec_driven_dev_goal_confirmed** - Confirm feature goals
-3. **spec_driven_dev_requirements_start** - Begin requirements gathering
-4. **spec_driven_dev_requirements_confirmed** - Confirm requirements completion
-5. **spec_driven_dev_design_start** - Start design documentation
-6. **spec_driven_dev_design_confirmed** - Confirm design completion
-7. **spec_driven_dev_tasks_start** - Begin task planning
-8. **spec_driven_dev_tasks_confirmed** - Confirm task planning completion
-9. **spec_driven_dev_execute_start** - Start task execution
+1. **spec_coding_workflow_start** - Start the development workflow
+2. **spec_coding_goal_confirmed** - Confirm feature goals
+3. **spec_coding_requirements_start** - Begin requirements gathering
+4. **spec_coding_requirements_confirmed** - Confirm requirements completion
+5. **spec_coding_design_start** - Start design documentation
+6. **spec_coding_design_confirmed** - Confirm design completion
+7. **spec_coding_tasks_start** - Begin task planning
+8. **spec_coding_tasks_confirmed** - Confirm task planning completion
+9. **spec_coding_execute_start** - Start task execution
 
 ## Workflow Stages & Example
 
@@ -85,7 +85,7 @@ The spec-driven development process follows five distinct stages. Here's how it 
 ```
 User: I want to build a user authentication feature
 Assistant: Let me start the spec-driven development workflow for you.
-[calls spec_driven_dev_workflow_start]
+[calls spec_coding_workflow_start]
 
 Let's define your feature goals:
 
@@ -104,7 +104,7 @@ Assistant: Perfect! Let me confirm:
 
 Is this correct?
 User: Yes, that's exactly what I need.
-[calls spec_driven_dev_goal_confirmed with feature_name="user-authentication"]
+[calls spec_coding_goal_confirmed with feature_name="user-authentication"]
 ```
 
 ### 2. Requirements Gathering - Create Detailed EARS-format Requirements
@@ -114,7 +114,7 @@ User: Yes, that's exactly what I need.
 **Example Interaction**:
 ```
 Assistant: Great! Now let's gather detailed requirements.
-[calls spec_driven_dev_requirements_start]
+[calls spec_coding_requirements_start]
 
 [Assistant generates detailed EARS-format requirements in docs/specs/user-authentication/requirements.md]
 - WHEN a user provides valid email/password THEN the system SHALL authenticate them
@@ -122,7 +122,7 @@ Assistant: Great! Now let's gather detailed requirements.
 - WHERE user roles are needed IF user is admin THEN they SHALL access admin features
 
 User: The requirements look comprehensive. Approved!
-[calls spec_driven_dev_requirements_confirmed]
+[calls spec_coding_requirements_confirmed]
 ```
 
 ### 3. Design Documentation - Technical Architecture and Design
@@ -132,7 +132,7 @@ User: The requirements look comprehensive. Approved!
 **Example Interaction**:
 ```
 Assistant: Now let's create the technical design.
-[calls spec_driven_dev_design_start]
+[calls spec_coding_design_start]
 
 [Assistant creates detailed design document including:]
 - Database schema for users, sessions, oauth_tokens
@@ -142,7 +142,7 @@ Assistant: Now let's create the technical design.
 - Role-based access control implementation
 
 User: Design looks good, proceed!
-[calls spec_driven_dev_design_confirmed]
+[calls spec_coding_design_confirmed]
 ```
 
 ### 4. Task Planning - Break Down into Executable Tasks
@@ -152,7 +152,7 @@ User: Design looks good, proceed!
 **Example Interaction**:
 ```
 Assistant: Let's break this down into executable tasks.
-[calls spec_driven_dev_tasks_start]
+[calls spec_coding_tasks_start]
 
 [Assistant creates numbered task list:]
 1. Set up database models (User, Session, OAuthToken)
@@ -164,7 +164,7 @@ Assistant: Let's break this down into executable tasks.
 7. Write integration tests
 
 User: Task breakdown is perfect!
-[calls spec_driven_dev_tasks_confirmed]
+[calls spec_coding_tasks_confirmed]
 ```
 
 ### 5. Task Execution - Implement the Code
@@ -174,7 +174,7 @@ User: Task breakdown is perfect!
 **Example Interaction**:
 ```
 Assistant: Time to implement! Let's start coding.
-[calls spec_driven_dev_execute_start]
+[calls spec_coding_execute_start]
 
 [Assistant implements each task step by step:]
 - Creates User model with email, password_hash, role fields
@@ -239,6 +239,18 @@ pnpm test
 
 # Or with npm
 npm test
+```
+
+### Publishing
+
+To publish the package to npm:
+
+```bash
+# Build the project
+pnpm build
+
+# Publish to npm (will automatically run prepublishOnly script)
+npm publish
 ```
 
 ## Contributing & License

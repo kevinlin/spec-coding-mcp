@@ -36,6 +36,6 @@ ${template}
 
 **Important**:
 - Please discuss the feature goals with me thoroughly until the goals are completely clear
-- **Only when you explicitly confirm the goals can you call** \`spec_driven_dev_goal_confirmed\` tool
+- **Only when you explicitly confirm the goals can you call** \`spec_coding_goal_confirmed\` tool
 - **Never** call the next stage tool before the user **explicitly confirms the goals**`;
 }

@@ -29,35 +29,35 @@ export const WORKFLOW_STEPS: WorkflowStep[] = [
     step_number: 1,
     name: STEP_NAMES.GOAL_CONFIRMATION,
     description: 'Clarify the feature development goal through conversation',
-    tool: 'spec_driven_dev_workflow_start → spec_driven_dev_goal_confirmed',
+    tool: 'spec_coding_workflow_start → spec_coding_goal_confirmed',
     deliverable: 'Clear feature goal and feature_name'
   },
   {
     step_number: 2,
     name: STEP_NAMES.REQUIREMENTS,
     description: 'Generate requirements document in EARS format',
-    tool: 'spec_driven_dev_requirements_start → spec_driven_dev_requirements_confirmed',
+    tool: 'spec_coding_requirements_start → spec_coding_requirements_confirmed',
     deliverable: 'docs/specs/{feature_name}/requirements.md'
   },
   {
     step_number: 3,
     name: STEP_NAMES.DESIGN,
     description: 'Create technical design document based on requirements',
-    tool: 'spec_driven_dev_design_start → spec_driven_dev_design_confirmed',
+    tool: 'spec_coding_design_start → spec_coding_design_confirmed',
     deliverable: 'docs/specs/{feature_name}/design.md'
   },
   {
     step_number: 4,
     name: STEP_NAMES.TASKS,
     description: 'Generate executable development task list',
-    tool: 'spec_driven_dev_tasks_start → spec_driven_dev_tasks_confirmed',
+    tool: 'spec_coding_tasks_start → spec_coding_tasks_confirmed',
     deliverable: 'docs/specs/{feature_name}/tasks.md'
   },
   {
     step_number: 5,
     name: STEP_NAMES.EXECUTION,
     description: 'Execute development tasks one by one',
-    tool: 'spec_driven_dev_execute_start',
+    tool: 'spec_coding_execute_start',
     deliverable: 'Actual code implementation'
   }
 ];
