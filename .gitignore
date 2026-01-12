@@ -206,7 +206,7 @@ $RECYCLE.BIN/
 .history/
 
 # Claude files
-.claude/
+# .claude/
 
 # Smithery files
 .smithery/

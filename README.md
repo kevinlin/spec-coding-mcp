@@ -1,12 +1,48 @@
-# Spec-driven Development MCP Server
+# Spec-driven Development Workflow
 
 [![smithery badge](https://smithery.ai/badge/@kevinlin/spec-coding-mcp)](https://smithery.ai/server/@kevinlin/spec-coding-mcp)
 
-An MCP server that brings AI-guided spec-driven development workflow to any AI-powered IDEs beyonnd Kiro. Transform your development process with structured, step-by-step guidance from idea to implementation.
+An AI-guided spec-driven development workflow available as both a **Claude Code Skill** and **MCP Server**. Transform your development process with structured, step-by-step guidance from idea to implementation.
 
 ## What is Spec-driven Development?
 
-Spec-driven development is a methodology that emphasizes creating detailed specifications before writing code. This approach helps ensure clear requirements, better design decisions, and more maintainable code. Our MCP server guides you through this process with AI assistance.
+Spec-driven development is a methodology that emphasizes creating detailed specifications before writing code. This approach helps ensure clear requirements, better design decisions, and more maintainable code. This workflow guides you through the process with AI assistance.
+
+## 🎯 Two Ways to Use This Workflow
+
+### Option 1: Claude Code Skill (Recommended for Claude Code Users)
+
+**Simple, integrated, no setup required!**
+
+The workflow is available as a native Claude Code Skill. Just invoke it in any conversation:
+
+```
+/spec-coding
+```
+
+Or naturally:
+```
+I want to use the spec-coding workflow to build [feature]
+```
+
+**Benefits:**
+- ✅ No installation or configuration needed
+- ✅ Native integration with Claude Code
+- ✅ Seamless conversation flow
+- ✅ Automatic progress tracking with TodoWrite
+
+**Learn more:** [Skill Documentation](.claude/skills/spec-coding/README.md) | [Migration Guide](SKILL_MIGRATION.md)
+
+### Option 2: MCP Server (For Other IDEs)
+
+Use as an MCP server for Claude Desktop, Cursor, or other MCP-compatible tools.
+
+**Installation via Smithery:**
+```bash
+npx -y @smithery/cli install @kevinlin/spec-coding-mcp --client claude
+```
+
+**Learn more:** See [MCP Server Setup](#installation) below.
 
 ## Features
 
@@ -15,9 +51,15 @@ Spec-driven development is a methodology that emphasizes creating detailed speci
 - **Structured Documentation**: Generates organized specs in EARS format
 - **Template-Based**: Uses proven templates for requirements, design, and tasks
 
-## Installation
+---
 
-### Installing via Smithery
+## MCP Server Setup
+
+This section is for users who want to use the workflow as an MCP server (Option 2 above).
+
+### Installation
+
+#### Installing via Smithery
 
 To install spec-coding-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@kevinlin/spec-coding-mcp):
 
