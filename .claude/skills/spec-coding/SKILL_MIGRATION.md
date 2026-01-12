@@ -17,7 +17,7 @@ The spec-driven development workflow has been converted from an MCP (Model Conte
 
 ### After (Claude Code Skill)
 
-- Single skill file: [.claude/skills/spec-coding.md](.claude/skills/spec-coding.md)
+- Single skill file: [.claude/skills/spec-coding/SKILL.md](.claude/skills/spec-coding/SKILL.md)
 - Integrated into Claude Code's natural conversation flow
 - No separate server process needed
 - State managed through conversation context
