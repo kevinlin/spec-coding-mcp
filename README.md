@@ -4,6 +4,10 @@
 
 An AI-guided spec-driven development workflow available as both a **Claude Code Skill** and **MCP Server**. Transform your development process with structured, step-by-step guidance from idea to implementation.
 
+<a href="https://glama.ai/mcp/servers/@kevinlin/spec-driven-dev-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@kevinlin/spec-driven-dev-mcp/badge" alt="Spec-driven Development Server MCP server" />
+</a>
+
 ## What is Spec-driven Development?
 
 Spec-driven development is a methodology that emphasizes creating detailed specifications before writing code. This approach helps ensure clear requirements, better design decisions, and more maintainable code. This workflow guides you through the process with AI assistance.
