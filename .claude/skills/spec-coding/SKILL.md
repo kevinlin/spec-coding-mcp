@@ -1,11 +1,19 @@
 ---
 name: spec-coding
-description: Guide users through the complete spec-driven development workflow - from goal confirmation to working implementation. Use when: (1) Starting development of a new feature, (2) User wants structured, specification-driven approach, (3) User explicitly invokes /spec-coding, (4) Feature requires clear documentation before implementation, (5) User wants to execute tasks from existing spec documents. Supports both creating new specs (5-stage workflow: goal confirmation → requirements → design → task planning → execution) and executing tasks from existing specs.
+description: Guide users through the complete spec-driven development workflow - from goal confirmation to working implementation
 ---
 
 # Spec-Driven Development Workflow
 
 A comprehensive workflow for developing features through specification-first approach. This workflow guides you through goal confirmation, requirements gathering, design documentation, task planning, and execution.
+
+## When to Use This Skill
+
+Use this skill when:
+- Starting development of a new feature
+- The user wants to follow a structured, specification-driven approach
+- The user explicitly invokes `/spec-coding`
+- A feature requires clear documentation before implementation
 
 ## Workflow Overview
 
