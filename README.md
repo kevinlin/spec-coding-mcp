@@ -1,6 +1,6 @@
 # Spec-driven Development Workflow
 
-[![smithery badge](https://smithery.ai/badge/@kevinlin/spec-coding-mcp)](https://smithery.ai/server/@kevinlin/spec-coding-mcp)
+[![LightNow capabilities](https://lightnow.ai/badge/io.github.kevinlin/spec-coding-mcp)](https://lightnow.ai/servers/io.github.kevinlin/spec-coding-mcp)
 
 An AI-guided spec-driven development workflow available as both a **Claude Code Skill** and **MCP Server**. Transform your development process with structured, step-by-step guidance from idea to implementation.
 
